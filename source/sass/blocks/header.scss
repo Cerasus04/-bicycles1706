@@ -1,0 +1,18 @@
+.header {
+  z-index: 1;
+}
+.header__container {
+  max-width: 874px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.header__toggle {
+  display: none;
+  border: 0;
+}
+
+.header__nav {    
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+

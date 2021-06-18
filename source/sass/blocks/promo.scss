@@ -1,0 +1,81 @@
+.promo {
+  min-height: 825px;
+  margin-top: -64px;
+  background-color: $background-grey;
+  background-image: url("../img/bike-bg-dt.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-bg-dt@2x.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    min-height: 767px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 390px;
+  }
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto; 
+  padding-top: 320px; 
+}
+
+.promo__text-wrapper {
+  max-width: 393px;
+}
+
+.promo__text-wrapper h2 {
+  margin: 23px 0 25px;    
+
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $basic-white;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
+
+.promo__text-wrapper p {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+
+  color: $basic-white;
+  opacity: 0.8;
+
+  @media (max-width: $desktop-width) {
+    max-width: 56.6%;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: unset;
+  }
+}
+ 
+.promo__form-wrapper {
+  max-width: 330px;
+}

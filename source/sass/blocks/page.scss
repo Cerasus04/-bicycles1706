@@ -1,0 +1,23 @@
+.page {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;   
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px; 
+  word-wrap: normal;
+  min-width: $mobile-width;
+  color: $basic-black;
+}
+
+.page__header {
+  
+}
+.page__main {
+
+}
+.page__footer {
+
+}

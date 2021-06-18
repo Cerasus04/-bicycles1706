@@ -1,0 +1,116 @@
+.form {
+  & fieldset {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+  
+    border: none;
+  
+    @media (max-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+  & legend {
+    margin-bottom: 20px;
+  
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $basic-white;
+
+    @media (max-width: $desktop-width) {
+      margin-bottom: 30px;
+  
+      font-size: 18px;
+      line-height: 28px;      
+    }
+  
+    @media (max-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form__row {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $special-black;  
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.form__row input {
+  width: 100%;
+  padding: 10px 30px 11px;
+
+  font: inherit;
+
+  border: 1px solid $input-border;
+  border-radius: 4px;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    box-shadow: 0 0 0 3px $error-accent;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 0 3px $basic-green;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 10px 20px 11px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 26px 11px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding: 11px 20px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: $basic-black;
+
+  background-color: $basic-green;
+  border: 3px solid $basic-green;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $basic-white;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      border-color: $basic-black;
+    }
+  }
+}
