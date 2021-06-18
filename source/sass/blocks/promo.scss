@@ -56,7 +56,8 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile) {
+    padding: 25px 15px 67px;
     background-image: url("../img/bike-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -80,6 +81,10 @@
     font-size: 30px;
     line-height: 42px;
     text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 68px;
   }
 }
 
@@ -114,6 +119,9 @@
   @media (max-width: $desktop-width) {
     max-width: 325px;
     margin: 0 auto;
-    padding-top: 73px;
-  }  
+    padding-top: 72px;
+  } 
+  @media (max-width: $mobile) {
+    max-width: 290px;
+  } 
 }

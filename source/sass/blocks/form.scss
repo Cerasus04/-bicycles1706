@@ -101,7 +101,7 @@
 
   &:hover,
   &:focus {
-    border-color: $basic-white;
+    border-color: $hover-aqua;
     outline: none;
   }
 
@@ -109,10 +109,10 @@
     opacity: 0.5;
   }
 
-  @media (max-width: $desktop-width) {
-    &:hover,
-    &:focus {
-      border-color: $basic-black;
-    }
-  }
+  // @media (max-width: $desktop-width) {
+  //   &:hover,
+  //   &:focus {
+  //     border-color: $basic-black;
+  //   }
+  // }
 }

@@ -5,6 +5,7 @@ $heading-black: #1f1f1f;
 $special-black: #1c1c1c;
 $menu-gray: #48494d;
 $basic-green: #0ad9c6;
+$hover-aqua: #7fffd4;
 $basic-white: #ffffff;
 $input-border: #c9ccd4;
 $special-dark-grey: #f6f7f9;
@@ -18,8 +19,8 @@ $mobile-width: 319px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
 
-$tablet: "only screen and (max-width: $desktop-width)";
-$mobile: "only screen and (max-width: $tablet-width)";
+$tablet: 768px;
+$mobile: 320px;
 
 //Mixin
 
