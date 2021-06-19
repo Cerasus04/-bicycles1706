@@ -22,8 +22,12 @@
 
   @media (max-width: $desktop-width) {
     @include title-tablet;
-    margin-bottom: 30px;    
+    margin-bottom: 33px;    
     line-height: 41px;    
+  }
+
+  @media (max-width: $tablet-width) {    
+    margin-bottom: 27px; 
   }
 }
 

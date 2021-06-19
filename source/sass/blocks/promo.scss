@@ -13,13 +13,13 @@
   }
 
   @media (max-width: $desktop-width) {
-    min-height: 767px;
+    min-height: 755px;
     margin-top: -22px;
     background: unset;
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 390px;
+    margin-bottom: 69px;    
   }
 }
 
