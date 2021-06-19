@@ -125,3 +125,9 @@
     max-width: 290px;
   } 
 }
+
+.promo--nojs .promo__logo {
+  @media (max-width: $mobile) {
+     display: none;
+  } 
+}
