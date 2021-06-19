@@ -1,0 +1,84 @@
+.about {
+  padding: 150px 137px;
+  text-align: center;
+  color: $basic-black;
+  background-color: $basic-white;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 106px 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px 50px;
+  }
+} 
+
+.about h2 {
+  @include title-desktop;
+
+  margin-bottom: 50px;  
+  color: $heading-black;
+  
+
+  @media (max-width: $desktop-width) {
+    @include title-tablet;
+    margin-bottom: 30px;    
+    line-height: 41px;    
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: myCounter;
+}
+
+.about__list li {
+  width: 22.5%;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  @media (max-width: $desktop-width) {
+    width: 47.1%;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
+}
+
+.about__list li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter, decimal-leading-zero);
+
+  display: block;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: $basic-green;
+  letter-spacing: -1.27px;
+
+  counter-increment: myCounter;
+}
+
+.about__list li:nth-child(4n + 1)::before {
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}

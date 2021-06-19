@@ -14,8 +14,8 @@
 </head>
 <body class="page">
   <header class="page__header header">
-    <div class="header__container">      
-      <!-- <button class="header__toggle" type="button" aria-label="Открыть или закрыть меню"></button> -->
+    <div class="header__container">
+      <!--header__nav--js при отключенном js, меняется на header__nav--opened и header__nav--closed -->
       <nav class="header__nav header__nav--nojs">
         <button class="header__toggle" type="button" aria-label="Открыть или закрыть меню"></button>          
         <ul class="header__list">
@@ -45,6 +45,7 @@
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">Сайт магазина "Moon"</h1>
+    <!--при js promo--nojs удаляется-->
     <section class="main__promo promo promo--nojs">
       <div class="promo__container">
         <div class="promo__text-wrapper">
