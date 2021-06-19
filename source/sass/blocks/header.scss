@@ -189,8 +189,7 @@
 }
 
 .header__nav--closed {
-  // padding-top: 20px;
-  & .header__toggle {
+   & .header__toggle {
     @media (max-width: $desktop-width) {
       display: block;
       background: $basic-green url("../img/icon-burger.svg") no-repeat 50%;
