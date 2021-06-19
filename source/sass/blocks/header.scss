@@ -30,6 +30,119 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   @media (max-width: $desktop-width) {
+    border-bottom: unset;
+  }
+}
+
+.header__list {
+  @include ul-reset; 
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @media (max-width: $desktop-width) {
     display: none;
   }
+}
+
+.header__item {
+  @media (max-width: $mobile) {    
+    margin-bottom: 27px;
+    background-color: $special-semi-grey;    
+  }
+}
+
+.header__link {
+  @include link;
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: $basic-white;
+
+  &::after {
+    display: none;
+
+    content: "";    
+    width: 25px;
+    height: 25px;
+  
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px; 
+    font-weight: 400;
+    padding: 16px;   
+    color: $menu-gray;
+  }
+}
+
+.header__link span {
+  opacity: 0.8;
+}
+
+.header__link:hover span,
+.header__link:focus span {
+  color: $basic-green;
+
+  opacity: 1;
+}
+
+.header__link:active span {
+  opacity: 0.8;
+}
+
+.header__nav--nojs {
+  @media (max-width: $mobile) {
+    & .header__list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      padding: 76px 0 0;
+      background-color: $basic-white;
+
+      &::before {
+        position: absolute;
+        content: "";    
+        width: 68px;
+        height: 20px;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+      
+        background-image: url("../img/logo.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    & .header__toggle {
+      display: none;
+    }
+
+    & .header__link {
+      
+    }
+  }
+
 }
