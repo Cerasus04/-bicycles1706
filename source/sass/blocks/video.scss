@@ -1,43 +1,42 @@
 .video {
-  position: relative;
-  min-height: 706px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 180px;
+  padding: 120px 17.7% 0;
   background-color: $background-black;
   color: $basic-white;
+  text-align: center;
 
   @media (max-width: $desktop-width) {
-    min-height: 416px;
+    margin-bottom: 125px;
+    padding: 70px 17.3% 0;
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 384px;
+    margin-bottom: 85px;
+    padding: 84px 15px 0;
   }
 }
 
 .video h2 {
-  @include title-desktop;
-  max-width: calc(100% - 500px);
-  margin: 0 auto;
-  padding-top: 120px;
+  @include title-desktop;  
+  margin-bottom: 20px;
 
   color: inherit;
-  text-align: center;
 
-  @media (max-width: $desktop-width) {
-    max-width: calc(100% - 340px);
-    
-    padding-top: 70px;
+  @media (max-width: $desktop-width) {    
     font-size: 24px;
   }
+
   @media (max-width: $tablet-width) {
-    max-width: 88%;
-    padding-top: 84px;
+    padding-right: 10px;
   }
 }
 
 .video p {
-  max-width: 28%;
+  max-width: 35%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-bottom: 56px;
   
   font-size: 16px;
   line-height: 28px;
@@ -45,46 +44,68 @@
   letter-spacing: -0.005em;
 
   opacity: 0.7;
-  text-align: center;
-
+ 
   @media (max-width: $desktop-width) {
-    max-width: 57%;    
+    max-width: 85%; 
+    margin-bottom: 40px;   
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 92%;    
+    max-width: 100%; 
+    margin-bottom: 50px;   
   }
 }
 .video__wrapper {
   position: relative;
-  bottom: -58px;
-  left: 50%;  
-  width: 65%; 
-  transform: translateX(-50%);
+  margin-bottom: -98px;
+
 
   @media (max-width: $desktop-width) {
-    width: calc(100% - 265px); 
-    bottom: -90px;   
+    margin-bottom: -90px;  
   }
 
   @media (max-width: $tablet-width) {
-    width: calc(100% -32px);
-    bottom: 30px;
+    margin-bottom: -48px;
   }
 }
+
+.video img {
+  display: block;
+  width: 100%;
+}
+
 .video__button {
   position: absolute;
   top: 50%;
   left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  padding-left: 5px;
+
+  background-color: $basic-green;
+  border: none;
+  border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (max-width: $desktop-width) {
-    & svg {
-      width: 90px;
-      height: 90px;
-    }
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);  
+    transform: translateX(-50%) translateY(-50%) scale(1.4);
+  }
+
+  @media (max-width: $tablet-width) {
+    transform: translateX(-50%) translateY(-50%);
   }
 }
