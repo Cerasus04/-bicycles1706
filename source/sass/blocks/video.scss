@@ -38,8 +38,7 @@
   max-width: 28%;
   margin: 0 auto;
   margin-top: 20px;
-  padding-bottom: 480px;
-
+  
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -49,18 +48,16 @@
   text-align: center;
 
   @media (max-width: $desktop-width) {
-    max-width: 57%;
-    padding-bottom: 237px;
+    max-width: 57%;    
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 92%;
-    padding-bottom: 163px;
+    max-width: 92%;    
   }
 }
 .video__wrapper {
-  position: absolute;
-  bottom: -100px;
+  position: relative;
+  bottom: -58px;
   left: 50%;  
   width: 65%; 
   transform: translateX(-50%);
