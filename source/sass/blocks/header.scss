@@ -1,6 +1,7 @@
 .header {
   background-color: $menu-gray;
 }
+
 .header__container {
   max-width: 874px;
   margin: 0 auto;
@@ -13,10 +14,8 @@
     position: absolute;    
     top: 0;
     right: 0;
-
     width: 50px;
-    height: 50px;
-    
+    height: 50px;    
     border: 0;
     cursor: pointer;
   }
@@ -25,6 +24,7 @@
 .header__nav {  
   position: relative; 
   padding-top: 20px; 
+
   &::after {
     position: absolute;
     content: "";
@@ -36,6 +36,7 @@
 
   @media (max-width: $desktop-width) {
     position: unset;
+
     &::after {
       display: none;
     }
@@ -44,14 +45,12 @@
 
 .header__list {
   @include ul-reset; 
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-bottom: 10px;
-
   list-style: none;
   font-weight: 300;
   font-size: 16px;
@@ -72,8 +71,7 @@
 }
 
 .header__link {
-  @include link;
-  
+  @include link;  
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -81,11 +79,9 @@
 
   &::after {
     display: none;
-
     content: "";    
     width: 25px;
-    height: 25px;
-  
+    height: 25px;  
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: center center;

@@ -1,9 +1,7 @@
 .footer__container {
   padding: 70px 16.7% 70px;
-
   text-align: center;
   color: $basic-black;
-
   background-color: $basic-white;
 
   @media (max-width: $desktop-width) {
@@ -24,7 +22,6 @@
 .footer__container h2 {
   margin: 0;
   margin-bottom: 30px;
-
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -33,7 +30,6 @@
 
   @media (max-width: $desktop-width) {
     margin-bottom: 20px;
-
     font-size: 24px;
   }
 
@@ -46,11 +42,9 @@
   max-width: 555px;
   margin: 0 auto;
   margin-bottom: 40px;
-
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
-
   opacity: 0.7;
 
   @media (max-width: $desktop-width) {
@@ -68,7 +62,6 @@
   width: 100%;
   height: 530px;
   margin-bottom: 37px;
-
   object-fit: cover;
   object-position: 50% 50%;
 
@@ -97,15 +90,12 @@
 
 .footer__contact {
   @include link;
-
   display: flex;
   margin-bottom: 20px;
   padding: 0 45px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-
   place-items: center;
 
   @media (max-width: $tablet-width) {
@@ -115,7 +105,6 @@
 
 .footer__contact svg {
   margin-right: 15px;
-
   fill: transparent;
 }
 

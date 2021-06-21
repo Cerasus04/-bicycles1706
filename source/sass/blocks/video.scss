@@ -21,7 +21,6 @@
 .video h2 {
   @include title-desktop;  
   margin-bottom: 20px;
-
   color: inherit;
 
   @media (max-width: $desktop-width) {    
@@ -36,13 +35,11 @@
 .video p {
   max-width: 35%;
   margin: 0 auto;
-  margin-bottom: 56px;
-  
+  margin-bottom: 56px;  
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
   letter-spacing: -0.005em;
-
   opacity: 0.7;
  
   @media (max-width: $desktop-width) {
@@ -78,14 +75,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 65px;
   height: 65px;
   padding-left: 5px;
-
   background-color: $basic-green;
   border: none;
   border-radius: 50%;
