@@ -11,22 +11,22 @@
   @media (max-width: $tablet-width) {
     padding: 0 15px 50px;
   }
-} 
+}
 
 .about h2 {
   @include title-desktop;
 
-  margin-bottom: 50px;  
-  color: $heading-black;  
+  margin-bottom: 50px;
+  color: $heading-black;
 
   @media (max-width: $desktop-width) {
     @include title-tablet;
-    margin-bottom: 33px;    
-    line-height: 41px;    
+    margin-bottom: 33px;
+    line-height: 41px;
   }
 
-  @media (max-width: $tablet-width) {    
-    margin-bottom: 27px; 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
   }
 }
 

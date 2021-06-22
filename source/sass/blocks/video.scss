@@ -19,11 +19,11 @@
 }
 
 .video h2 {
-  @include title-desktop;  
+  @include title-desktop;
   margin-bottom: 20px;
   color: inherit;
 
-  @media (max-width: $desktop-width) {    
+  @media (max-width: $desktop-width) {
     font-size: 24px;
   }
 
@@ -35,21 +35,21 @@
 .video p {
   max-width: 35%;
   margin: 0 auto;
-  margin-bottom: 56px;  
+  margin-bottom: 56px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
   letter-spacing: -0.005em;
   opacity: 0.7;
- 
+
   @media (max-width: $desktop-width) {
-    max-width: 85%; 
-    margin-bottom: 40px;   
+    max-width: 85%;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 100%; 
-    margin-bottom: 50px;   
+    max-width: 100%;
+    margin-bottom: 50px;
   }
 }
 .video__wrapper {
@@ -58,7 +58,7 @@
 
 
   @media (max-width: $desktop-width) {
-    margin-bottom: -90px;  
+    margin-bottom: -90px;
   }
 
   @media (max-width: $tablet-width) {

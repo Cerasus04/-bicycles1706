@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bike-bg-dt@2x.jpg");
@@ -19,7 +18,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 69px;    
+    margin-bottom: 69px;
   }
 }
 
@@ -27,8 +26,8 @@
   display: flex;
   justify-content: space-between;
   max-width: 880px;
-  margin: 0 auto; 
-  padding-top: 320px; 
+  margin: 0 auto;
+  padding-top: 320px;
 
   @media (max-width: $desktop-width) {
     max-width: unset;
@@ -40,7 +39,7 @@
 .promo__text-wrapper {
   max-width: 393px;
 
-  @media (max-width: $desktop-width) {    
+  @media (max-width: $desktop-width) {
     padding: 25px 22px 78px;
     max-width: unset;
     min-height: 340px;
@@ -107,7 +106,7 @@
     max-width: unset;
   }
 }
- 
+
 .promo__form-wrapper {
   max-width: 330px;
 
@@ -115,14 +114,14 @@
     max-width: 325px;
     margin: 0 auto;
     padding-top: 72px;
-  } 
+  }
   @media (max-width: $mobile) {
     max-width: 290px;
-  } 
+  }
 }
 
 .promo--nojs .promo__logo {
   @media (max-width: $mobile) {
-     display: none;
-  } 
+    display: none;
+  }
 }
