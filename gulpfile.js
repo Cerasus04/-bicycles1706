@@ -18,14 +18,13 @@ var del = require('del');
 var ghPages = require('gh-pages');
 var path = require('path');
 
-
-
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))

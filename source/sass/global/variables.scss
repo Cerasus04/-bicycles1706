@@ -19,28 +19,3 @@ $tablet-width: 767px;
 $desktop-width: 1023px;
 $tablet: 768px;
 $mobile: 320px;
-
-//Mixin
-@mixin ul-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@mixin title-desktop {
-  margin: 0;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  text-align: center;
-  color: $heading-black;
-}
-
-@mixin title-tablet {
-  font-size: 24px;
-}
-
-@mixin link {
-  text-decoration: none;
-}

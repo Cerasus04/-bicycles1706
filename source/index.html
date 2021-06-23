@@ -26,7 +26,7 @@
             </a>
           </li>
           <li class="header__item">
-            <a href="#varieties" class="header__link" aria-label="перейти к разделу Виды велосипедов">
+            <a href="#bike-types" class="header__link" aria-label="перейти к разделу Виды велосипедов">
               <span>Виды велосипедов</span>
             </a>
           </li>
@@ -69,7 +69,7 @@
               </div>
               <div class="form__row">
                 <label class="visually-hidden" for="phone">Укажите Ваш номер телефона</label>
-                <input id="phone" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Введите Ваш номер телефона"
+                <input type="tel" id="phone" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Введите Ваш номер телефона"
                   autocomplete="on" required>
               </div>
               <button class="form__button button button--submit" type="submit">
@@ -89,45 +89,45 @@
         <li>Профессиональные консультации!</li>
       </ol>
     </section>
-    <section class="main__varieties varieties" id="varieties">
+    <section class="main__bike-types bike-types" id="bike-types">
       <h2>Виды велосипедов</h2>
-      <ul class="varieties__list">
-        <li class="varieties__item">
-          <div class="varieties__wrapper">
+      <ul class="bike-types__list">
+        <li class="bike-types__item">
+          <div class="bike-types__wrapper">
             <picture>
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/roadBike-mobile.webp 1x, img/roadBike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <source type="image/webp" srcset="img/roadBike-dt.webp 1x, img/roadBike-dt@2x.webp 2x">
+              <source type="image/webp" srcset="img/road-bike-dt.webp 1x, img/road-bike-dt@2x.webp 2x">
               <!-- 1x: 342px ; 2x: 684px -->
-              <img src="img/roadBike-dt.jpg" srcset="img/roadBike-dt@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
+              <img src="img/road-bike-dt.jpg" srcset="img/road-bike-dt@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
             </picture>
           </div>
           <p>Дорожный велосипед</p>
         </li>
-        <li class="varieties__item">
-          <div class="varieties__wrapper">
+        <li class="bike-types__item">
+          <div class="bike-types__wrapper">
             <picture>
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountainBike-mobile.webp 1x, img/mountainBike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <source
-                type="image/webp" srcset="img/mountainBike-dt.webp 1x, img/mountainBike-dt@2x.webp 2x">
+                type="image/webp" srcset="img/mountain-bike-dt.webp 1x, img/mountain-bike-dt@2x.webp 2x">
               <!-- 1x: 342px ; 2x: 684px -->
-              <img src="img/mountainBike-dt.jpg" srcset="img/mountainBike-dt@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
+              <img src="img/mountain-bike-dt.jpg" srcset="img/mountain-bike-dt@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
             </picture>
           </div>
           <p>Горный велосипед</p>
         </li>
-        <li class="varieties__item">
-          <div class="varieties__wrapper">
+        <li class="bike-types__item">
+          <div class="bike-types__wrapper">
             <picture>
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/childrenBike-mobile.webp 1x, img/childrenBike-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/children-bike-mobile.webp 1x, img/children-bike-mobile@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <source type="image/webp" srcset="img/childrenBike-dt.webp 1x, img/childrenBike-dt@2x.webp 2x">
+              <source type="image/webp" srcset="img/children-bike-dt.webp 1x, img/children-bike-dt@2x.webp 2x">
               <!-- 1x: 342px ; 2x: 684px -->
-              <img src="img/childrenBike-dt.jpg" srcset="img/childrenBike@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
+              <img src="img/children-bike-dt.jpg" srcset="img/children-bike@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
             </picture>
           </div>
           <p>Детский велосипед</p>
@@ -186,6 +186,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
