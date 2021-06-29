@@ -5,6 +5,7 @@
   const headerToggle = document.querySelector('.header__toggle');
   const promoBlock = document.querySelector('.promo');
   const listItems = headerNav.querySelectorAll('.header__link');
+  const page = document.querySelector('.page');
 
   headerNav.classList.remove('header__nav--nojs');
   headerNav.classList.add('header__nav--closed');
@@ -14,9 +15,11 @@
     if (headerNav.classList.contains('header__nav--closed')) {
       headerNav.classList.remove('header__nav--closed');
       headerNav.classList.add('header__nav--opened');
+      page.classList.add('page--js');
     } else {
       headerNav.classList.add('header__nav--closed');
       headerNav.classList.remove('header__nav--opened');
+      page.classList.remove('page--js');
     }
   };
 
