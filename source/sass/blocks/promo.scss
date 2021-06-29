@@ -1,20 +1,8 @@
 .promo {
   min-height: 825px;
-  margin-top: -64px;
-  background-color: $background-grey;
-  background-image: url("../img/bike-bg-dt.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bike-bg-dt@2x.jpg");
-  }
 
   @media (max-width: $desktop-width) {
     min-height: 755px;
-    margin-top: -22px;
-    background: unset;
   }
 
   @media (max-width: $tablet-width) {
@@ -23,11 +11,13 @@
 }
 
 .promo__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 880px;
   margin: 0 auto;
   padding-top: 320px;
+  z-index: 10;
 
   @media (max-width: $desktop-width) {
     max-width: unset;
