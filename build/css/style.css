@@ -97,6 +97,10 @@ input[type="radio"].visually-hidden {
     .header {
       background: unset; } }
 
+.header--nojs {
+  position: relative;
+  min-height: 455px; }
+
 .header__container {
   max-width: 874px;
   margin: 0 auto; }
@@ -206,6 +210,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .header__nav--nojs {
+    position: relative;
     padding-top: 0; }
     .header__nav--nojs .header__list {
       position: relative;

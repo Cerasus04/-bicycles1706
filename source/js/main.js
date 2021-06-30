@@ -1,12 +1,14 @@
 'use strict';
 
 (function () {
-  const headerNav = document.querySelector('.header__nav');
-  const headerToggle = document.querySelector('.header__toggle');
+  const header = document.querySelector('.header');
+  const headerNav = header.querySelector('.header__nav');
+  const headerToggle = header.querySelector('.header__toggle');
   const promoBlock = document.querySelector('.promo');
-  const listItems = headerNav.querySelectorAll('.header__link');
+  const listItems = header.querySelectorAll('.header__link');
   const page = document.querySelector('.page');
 
+  header.classList.remove('header--nojs');
   headerNav.classList.remove('header__nav--nojs');
   headerNav.classList.add('header__nav--closed');
   promoBlock.classList.remove('promo--nojs');
