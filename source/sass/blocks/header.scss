@@ -20,8 +20,10 @@
 }
 
 .header--nojs {
-  position: relative;
-  min-height: 455px;
+  @media (max-width: $desktop-width) {
+    position: relative;
+    min-height: 455px;
+  }
 }
 
 .header__container {

@@ -111,7 +111,7 @@
 }
 
 .promo--nojs .promo__logo {
-  @media (max-width: $mobile) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }

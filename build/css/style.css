@@ -97,9 +97,10 @@ input[type="radio"].visually-hidden {
     .header {
       background: unset; } }
 
-.header--nojs {
-  position: relative;
-  min-height: 455px; }
+@media (max-width: 1023px) {
+  .header--nojs {
+    position: relative;
+    min-height: 455px; } }
 
 .header__container {
   max-width: 874px;
@@ -385,7 +386,7 @@ input[type="radio"].visually-hidden {
     .promo__form-wrapper {
       max-width: 290px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 1023px) {
   .promo--nojs .promo__logo {
     display: none; } }
 
