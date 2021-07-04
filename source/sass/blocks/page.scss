@@ -13,5 +13,7 @@
 }
 
 .page--js {
-  overflow: hidden;
+  @media (max-width: $desktop-width) {
+    overflow: hidden;
+  }
 }
