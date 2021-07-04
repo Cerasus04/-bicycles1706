@@ -49,6 +49,7 @@
 .header__nav {
   position: relative;
   padding-top: 20px;
+  z-index: 20;
 
   &::after {
     position: absolute;

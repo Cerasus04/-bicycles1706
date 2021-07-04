@@ -121,7 +121,8 @@ input[type="radio"].visually-hidden {
 
 .header__nav {
   position: relative;
-  padding-top: 20px; }
+  padding-top: 20px;
+  z-index: 20; }
   .header__nav::after {
     position: absolute;
     content: "";
